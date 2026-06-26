@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx serve:*)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(ipconfig getifaddr:*)",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(python3:*)",
+      "Bash(echo \"Server running: $!\")",
+      "Bash(lsof -ti:3000 -ti:8080)",
+      "Bash(xargs kill:*)",
+      "Bash(npm root:*)",
+      "Bash(npm bin:*)",
+      "Bash(npm config:*)"
+    ]
+  }
+}
