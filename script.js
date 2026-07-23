@@ -33,6 +33,7 @@
 })();
 
 
+
 // ── 2. CUENTA REGRESIVA ────────────────────────────────────────────────────
 (function initCountdown() {
   // Fecha del evento: 8 de agosto de 2026, 1:30 pm (hora local)
