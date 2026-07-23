@@ -16,121 +16,13 @@
 <div class="card">
 
   <!-- ============================================================
-       MARCO BOTÁNICO — perimetral, position:absolute inset:0
-       ============================================================ -->
-  <div class="botanical-border" aria-hidden="true">
-    <svg viewBox="0 0 440 700" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <!-- ── LEAF: base(0,0) tip(0,-26), ancho ~14. rotate(-50)=upper-left rotate(-130)=lower-left -->
-      <!-- ── COLORES: #6B8860=A #5A7850=B  tallo=#4A6538  contorno=#3A5028 -->
-
-      <!-- TALLOS LATERALES -->
-      <line x1="22" y1="38" x2="22" y2="662" stroke="#4A6538" stroke-width="1.5" stroke-linecap="round"/>
-      <line x1="418" y1="38" x2="418" y2="662" stroke="#4A6538" stroke-width="1.5" stroke-linecap="round"/>
-
-      <!-- HOJAS IZQUIERDA (29 hojas, alternando upper-left / lower-left) -->
-      <g transform="translate(22,42) rotate(-60)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#6B8860" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-      <g transform="translate(22,64) rotate(-120)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#5A7850" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-      <g transform="translate(22,86) rotate(-60)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#6B8860" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-      <g transform="translate(22,108) rotate(-120)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#5A7850" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-      <g transform="translate(22,130) rotate(-60)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#6B8860" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-      <g transform="translate(22,152) rotate(-120)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#5A7850" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-      <g transform="translate(22,174) rotate(-60)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#6B8860" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-      <g transform="translate(22,196) rotate(-120)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#5A7850" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-      <g transform="translate(22,218) rotate(-60)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#6B8860" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-      <g transform="translate(22,240) rotate(-120)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#5A7850" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-      <g transform="translate(22,262) rotate(-60)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#6B8860" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-      <g transform="translate(22,284) rotate(-120)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#5A7850" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-      <g transform="translate(22,306) rotate(-60)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#6B8860" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-      <g transform="translate(22,328) rotate(-120)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#5A7850" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-      <g transform="translate(22,350) rotate(-60)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#6B8860" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-      <g transform="translate(22,372) rotate(-120)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#5A7850" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-      <g transform="translate(22,394) rotate(-60)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#6B8860" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-      <g transform="translate(22,416) rotate(-120)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#5A7850" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-      <g transform="translate(22,438) rotate(-60)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#6B8860" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-      <g transform="translate(22,460) rotate(-120)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#5A7850" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-      <g transform="translate(22,482) rotate(-60)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#6B8860" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-      <g transform="translate(22,504) rotate(-120)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#5A7850" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-      <g transform="translate(22,526) rotate(-60)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#6B8860" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-      <g transform="translate(22,548) rotate(-120)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#5A7850" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-      <g transform="translate(22,570) rotate(-60)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#6B8860" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-      <g transform="translate(22,592) rotate(-120)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#5A7850" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-      <g transform="translate(22,614) rotate(-60)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#6B8860" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-      <g transform="translate(22,636) rotate(-120)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#5A7850" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-      <g transform="translate(22,658) rotate(-60)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#6B8860" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-
-      <!-- HOJAS DERECHA (mirror horizontal del izquierdo) -->
-      <g transform="translate(440,0) scale(-1,1)">
-        <g transform="translate(22,42) rotate(-60)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#6B8860" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-        <g transform="translate(22,64) rotate(-120)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#5A7850" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-        <g transform="translate(22,86) rotate(-60)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#6B8860" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-        <g transform="translate(22,108) rotate(-120)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#5A7850" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-        <g transform="translate(22,130) rotate(-60)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#6B8860" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-        <g transform="translate(22,152) rotate(-120)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#5A7850" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-        <g transform="translate(22,174) rotate(-60)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#6B8860" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-        <g transform="translate(22,196) rotate(-120)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#5A7850" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-        <g transform="translate(22,218) rotate(-60)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#6B8860" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-        <g transform="translate(22,240) rotate(-120)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#5A7850" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-        <g transform="translate(22,262) rotate(-60)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#6B8860" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-        <g transform="translate(22,284) rotate(-120)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#5A7850" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-        <g transform="translate(22,306) rotate(-60)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#6B8860" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-        <g transform="translate(22,328) rotate(-120)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#5A7850" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-        <g transform="translate(22,350) rotate(-60)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#6B8860" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-        <g transform="translate(22,372) rotate(-120)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#5A7850" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-        <g transform="translate(22,394) rotate(-60)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#6B8860" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-        <g transform="translate(22,416) rotate(-120)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#5A7850" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-        <g transform="translate(22,438) rotate(-60)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#6B8860" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-        <g transform="translate(22,460) rotate(-120)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#5A7850" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-        <g transform="translate(22,482) rotate(-60)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#6B8860" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-        <g transform="translate(22,504) rotate(-120)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#5A7850" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-        <g transform="translate(22,526) rotate(-60)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#6B8860" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-        <g transform="translate(22,548) rotate(-120)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#5A7850" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-        <g transform="translate(22,570) rotate(-60)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#6B8860" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-        <g transform="translate(22,592) rotate(-120)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#5A7850" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-        <g transform="translate(22,614) rotate(-60)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#6B8860" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-        <g transform="translate(22,636) rotate(-120)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#5A7850" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-        <g transform="translate(22,658) rotate(-60)"><path d="M 0 0 C -5 -2 -5.5 -9 0 -18 C 5.5 -9 5 -2 0 0" fill="#6B8860" stroke="#3A5028" stroke-width=".9"/><line x1="0" y1="-1" x2="0" y2="-16" stroke="#3A5028" stroke-width=".5" opacity=".6"/></g>
-      </g>
-
-
-    </svg>
-  </div>
-
-
-  <!-- ============================================================
        CONTENIDO — z-index:2 encima de las ramas
        ============================================================ -->
   <div class="card__body">
 
     <!-- Texto superior -->
     <p class="top-text">TE INVITAMOS A CELEBRAR<br>CON NOSOTROS LA</p>
-
-    <!-- Cruz con ramas de olivo -->
-    <div class="cross-olive" aria-hidden="true">
-      <svg viewBox="0 0 240 48" xmlns="http://www.w3.org/2000/svg">
-        <path d="M10 24C38 24 70 22 96 24" stroke="#8A9A7E" stroke-width="1.1" fill="none" stroke-linecap="round"/>
-        <g transform="translate(34,24) rotate(-8)"><path d="M0 2C-7-10-5-24 0-30C5-24 7-10 0 2Z" fill="#8A9A7E" opacity=".78"/></g>
-        <g transform="translate(60,23) rotate(2)"><path d="M0 2C-7-10-5-24 0-30C5-24 7-10 0 2Z" fill="#7A9070" opacity=".72"/></g>
-        <circle cx="34" cy="23" r="1.8" fill="#C9A86A" opacity=".84"/>
-        <circle cx="60" cy="23" r="1.5" fill="#C9A86A" opacity=".78"/>
-        <!-- Cruz dorada -->
-        <rect x="116" y="8"  width="8"  height="32" rx="2.5" fill="#C9A86A"/>
-        <rect x="106" y="16" width="28" height="8"  rx="2.5" fill="#C9A86A"/>
-        <circle cx="120" cy="8" r="2.5" fill="#C9A86A" opacity=".4"/>
-        <!-- Rama derecha -->
-        <path d="M144 24C170 22 202 24 230 24" stroke="#8A9A7E" stroke-width="1.1" fill="none" stroke-linecap="round"/>
-        <g transform="translate(166,23) rotate(-2)"><path d="M0 2C-7-10-5-24 0-30C5-24 7-10 0 2Z" fill="#8A9A7E" opacity=".78"/></g>
-        <g transform="translate(194,24) rotate(8)"><path d="M0 2C-7-10-5-24 0-30C5-24 7-10 0 2Z" fill="#7A9070" opacity=".72"/></g>
-        <circle cx="166" cy="23" r="1.8" fill="#C9A86A" opacity=".84"/>
-        <circle cx="194" cy="24" r="1.5" fill="#C9A86A" opacity=".78"/>
-      </svg>
-    </div>
-
-    <!-- Swirl bajo la cruz -->
-    <div class="mini-swirl" aria-hidden="true">
-      <svg viewBox="0 0 120 18" xmlns="http://www.w3.org/2000/svg">
-        <path d="M8 9Q20 3 32 9Q44 15 56 9Q68 3 80 9Q92 15 104 9Q110 6 116 9" stroke="#C9A86A" stroke-width=".85" fill="none" stroke-linecap="round" opacity=".62"/>
-      </svg>
-    </div>
+    <p class="primera-comunion">Primera Comunión<br><span class="de-label">de</span></p>
 
     <!-- Imagen emblema circular (reemplaza cáliz + PRIMERA/Comunión + nombre) -->
     <img
@@ -170,7 +62,7 @@
         </div>
         <div class="detail-text">
           <span class="detail-label">HORA</span>
-          <span class="detail-value">1:30 pm</span>
+          <span class="detail-value">1:00 pm</span>
         </div>
       </div>
 
@@ -185,7 +77,7 @@
         </div>
         <div class="detail-text">
           <span class="detail-label">LUGAR</span>
-          <span class="detail-value">Local 33</span>
+          <span class="detail-value">Local 33, habrá piscina!!</span>
         </div>
       </div>
 
@@ -214,7 +106,7 @@
     <section class="family">
       <p class="family-block">
         <span class="family-label">Sus padres</span>
-        Ricardo Canto &amp; Christian Herrera
+        Christian Herrera &amp; Ricardo Canto
       </p>
       <p class="family-block family-block--god">
         <span class="family-label">Su madrina</span>

@@ -47,19 +47,11 @@ body {
    TARJETA — borde doble + overflow visible para ramas
    ============================================= */
 .card {
-  background: var(--card-bg);
+  background: #F5EDE0 url('fondo.png') center / 100% 100% no-repeat;
   position: relative;
-  overflow: hidden;           /* ramas se recortan al borde de la tarjeta */
+  overflow: hidden;
 
-  /* Borde exterior dorado */
-  border: 1.5px solid var(--gold);
-  border-radius: 6px;
-
-  /* Sombra + borde interior dorado via inset box-shadow */
-  box-shadow:
-    0 12px 52px rgba(50, 40, 20, .14),
-    inset 0 0 0 9px  var(--card-bg),
-    inset 0 0 0 11px rgba(201, 168, 106, .36);
+  box-shadow: 0 12px 52px rgba(50, 40, 20, .14);
 }
 
 /* =============================================
@@ -79,7 +71,7 @@ body {
 .card__body {
   position: relative;
   z-index: 2;
-  padding: 38px 32px 34px;
+  padding: 100px 32px 52px;
   text-align: center;    /* texto centrado por defecto */
 }
 
@@ -88,13 +80,38 @@ body {
    ============================================= */
 .top-text {
   font-family: var(--serif);
+  font-size: .88rem;
+  font-weight: 700;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: #111;
+  line-height: 1.85;
+  margin-bottom: 16px;
+  text-shadow:
+    0 0 6px #fff,
+    0 0 12px #fff,
+    0 0 20px rgba(255,255,255,.9);
+}
+
+/* =============================================
+   PRIMERA COMUNIÓN
+   ============================================= */
+.primera-comunion {
+  font-family: var(--script);
+  font-size: 3rem;
+  color: #8B6914;
+  margin-bottom: 16px;
+  text-shadow:
+    0 0 8px #fff,
+    0 0 18px rgba(255,255,255,.9),
+    0 0 2px rgba(139,105,20,.3);
+}
+.de-label {
+  font-family: var(--serif);
   font-size: .76rem;
   font-weight: 400;
   letter-spacing: .22em;
   text-transform: uppercase;
-  color: var(--sage-mid);
-  line-height: 1.85;
-  margin-bottom: 16px;
 }
 
 /* =============================================
@@ -150,7 +167,6 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  border: 1.5px solid var(--sage-mid);
   color: var(--sage);
   display: flex;
   align-items: center;
@@ -217,18 +233,18 @@ body {
    ============================================= */
 .family {
   width: 100%;
-  border-top: 1px solid rgba(201,168,106,.28);
-  border-bottom: 1px solid rgba(201,168,106,.28);
-  padding: 14px 8px;
+  padding: 20px 8px 14px;
   margin-bottom: 22px;
 }
 .family-block {
   font-family: var(--serif);
-  font-size: 1rem;
-  color: var(--text);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--gold-d);
   line-height: 1.7;
+  text-shadow: 0 0 8px #fff, 0 0 16px #fff, 0 0 24px rgba(255,255,255,.9);
 }
-.family-block--god { margin-top: 10px; }
+.family-block--god { margin-top: 14px; }
 .family-label {
   display: block;
   font-family: var(--sans);
@@ -237,7 +253,7 @@ body {
   letter-spacing: .2em;
   text-transform: uppercase;
   color: var(--sage-mid);
-  margin-bottom: 1px;
+  margin-bottom: 3px;
 }
 
 /* =============================================
@@ -280,9 +296,8 @@ body {
 .btn--primary:hover { background: #3D5E3A; box-shadow: 0 6px 20px rgba(74,104,68,.40); }
 
 .btn--secondary {
-  background: transparent;
+  background: rgba(248, 243, 232, 0.75);
   color: var(--gold-d);
-  border: 1.5px solid var(--gold);
   box-shadow: 0 2px 10px rgba(201,168,106,.14);
 }
 .btn--secondary:hover { background: rgba(201,168,106,.1); box-shadow: 0 4px 16px rgba(201,168,106,.26); }
@@ -294,7 +309,7 @@ body {
    ============================================= */
 @media (min-width: 480px) {
   body { padding: 56px 24px 72px; }
-  .card__body { padding: 42px 40px 36px; }
+  .card__body { padding: 52px 40px 52px; }
   .actions { flex-direction: row; }
   .btn { flex: 1; }
   .bot--tl { width: 200px; height: 200px; }
@@ -308,4 +323,16 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .wrapper { opacity: 1; transform: none; transition: none; }
   .btn     { transition: none; }
+}
+
+/* =============================================
+   AVISO INTERNO EN LA INVITACIÓN
+   ============================================= */
+.detail-note {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--text);
+  line-height: 1.2;
+  margin-top: 2px;
 }
